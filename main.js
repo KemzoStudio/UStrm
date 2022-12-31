@@ -9,12 +9,12 @@ const createWindow = () => {
         height: 600,
         webPreferences: {
             nodeIntegration: true,
-            preload: path.join(__dirname, './app/preload.js')
+            preload: path.join(__dirname, './src/preload.js')
         }
     });
 
     win.webContents.openDevTools();
-    win.loadFile(path.join(__dirname, './app/pages/home.html'));  
+    win.loadFile(path.join(__dirname, './src/pages/home.html'));  
 };
 
 app.whenReady().then(() => {
@@ -34,6 +34,6 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit();
     }
-    
+
 });
   
