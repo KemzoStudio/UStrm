@@ -2,17 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Hello World!</title>
     <link rel="stylesheet" href="../public/css/boxicons.min.css" />
+    <link rel="stylesheet" href="../public/css/plyr.css" />
     <link rel="stylesheet" href="../public/css/home.css" />
   </head>
   <body>
 
-    <h2>test</h2>
-    <i class='bx bx-user'></i>
-    <i class='bx bxs-user'></i>
-    
+    <input type="url" id="url">
+    <button id="startButton">Start</button>
+    <audio id="player" controls>
+      <source type="audio/mp3" />
+      <source type="audio/ogg" />
+    </audio>
+
+    <script src="../public/js/plyr.min.js"></script>
     <script src="../public/js/home.js"></script>
   </body>
 </html>
