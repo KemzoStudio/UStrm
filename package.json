@@ -1,0 +1,34 @@
+{
+  "name": "ustrm",
+  "version": "0.0.1",
+  "description": "stream & play audio and video from online sources using url",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KemzoStudio/UStrm.git"
+  },
+  "keywords": [
+    "media",
+    "player",
+    "url",
+    "stream",
+    "kemzostudio",
+    "kemzo"
+  ],
+  "author": "KemzoStudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KemzoStudio/UStrm/issues"
+  },
+  "homepage": "https://github.com/KemzoStudio/UStrm#readme",
+  "dependencies": {
+    "v8-compile-cache": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}
